@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .campo{
+            background-color: yellow;
+            border:5px solid green;
+        }
+        .botao{
+            width:5%;
+            height:3%;
+            background-color: rgb(139, 94, 137);
+            border:1.5px solid purple;
+        }
+        .botao2{
+            width:5%;
+            height:3%;
+            background-color: rgb(37, 158, 107);
+            border:1.5px solid rgb(14, 8, 187);
+        }
+        .botao3{
+            width:5%;
+            height:3%;
+            background-color: rgb(178, 26, 117);
+            border:1.5px solid rgb(166, 206, 24);
+        }
+        .botao4{
+            width:5%;
+            height:3%;
+            background-color: rgb(178, 77, 26);
+            border:1.5px solid rgb(18, 126, 172);
+        }
+    </style>
+</head>
+<body>
+     <fieldset>
+        <legend>CALCULADORA DE YASMIN 2°A</legend>
+        <input type="text" 
+        <input type="text" id="campo" class="campo"><br><br>
+        <button class="botao">1</button>
+        <button class="botao">2</button>
+        <button class="botao">3</button>
+        <button class="botao2">x</button>
+        <button class="botao2">^</button>
+        <br>
+        <button class="botao">4</button>
+        <button class="botao">5</button>
+        <button class="botao">6</button>
+        <button class="botao2">/</button>
+        <button class="botao2">(</button>
+        <br>
+        <button class="botao">7</button>
+        <button class="botao">8</button>
+        <button class="botao">9</button>
+        <button class="botao2">+</button>
+        <button class="botao2">)</button>
+        <br>
+        <button class="botao2">*</button>
+        <button class="botao">0</button>
+        <button class="botao2">#</button>
+        <button class="botao2">-</button>
+        <button class="botao2">%</button>
+        <br>
+        <button class="botao3">C</button>
+        <button class="botao4">=</button>
 
+     </fieldset>
+    
+</body>
+</html>
