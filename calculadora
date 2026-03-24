@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       
         .campo{
             background-color: yellow;
             border:5px solid green;
@@ -35,40 +34,45 @@
             border:1.5px solid rgb(18, 126, 172);
         }
     </style>
+    <script>
+        function adicionar(valor){
+            document.getElementById("campo").value += valor;
+        }
+        function limpar(){
+            document.getElementById("campo").value = "";
+        }
+    </script>
 </head>
 <body>
-     <fieldset>
-        <legend>CALCULADORA DE YASMIN 2°A</legend>
-        <input type="text" 
-        <input type="text" id="campo" class="campo"><br><br>
-        <button class="botao">1</button>
-        <button class="botao">2</button>
-        <button class="botao">3</button>
-        <button class="botao2">x</button>
-        <button class="botao2">^</button>
+    <fieldset>
+        <legend>CALCULADORA DO 2ºA</legend>
+        <input type="text" id="campo" onclick="adicionar('1')" class="campo"><br><br>
+        <button onclick="adicionar('1')" class="botao">1</button>
+        <button onclick="adicionar('2')" class="botao">2</button>
+        <button onclick="adicionar('3')" class="botao">3</button>
+        <button onclick="adicionar('*')" class="botao2">x</button>
+        <button onclick="adicionar('^')" class="botao2">^</button>
         <br>
-        <button class="botao">4</button>
-        <button class="botao">5</button>
-        <button class="botao">6</button>
-        <button class="botao2">/</button>
-        <button class="botao2">(</button>
+        <button onclick="adicionar('4')" class="botao">4</button>
+        <button onclick="adicionar('5')" class="botao">5</button>
+        <button onclick="adicionar('6')" class="botao">6</button>
+        <button onclick="adicionar('/')" class="botao2">/</button>
+        <button onclick="adicionar('(')" class="botao2">(</button>
         <br>
-        <button class="botao">7</button>
-        <button class="botao">8</button>
-        <button class="botao">9</button>
-        <button class="botao2">+</button>
-        <button class="botao2">)</button>
+        <button onclick="adicionar('7')" class="botao">7</button>
+        <button onclick="adicionar('8')" class="botao">8</button>
+        <button onclick="adicionar('9')" class="botao">9</button>
+        <button onclick="adicionar('+')" class="botao2">+</button>
+        <button onclick="adicionar(')')" class="botao2">)</button>
         <br>
-        <button class="botao2">*</button>
-        <button class="botao">0</button>
-        <button class="botao2">#</button>
-        <button class="botao2">-</button>
-        <button class="botao2">%</button>
+        <button onclick="adicionar('*')" class="botao2">*</button>
+        <button onclick="adicionar('0')" class="botao">0</button>
+        <button onclick="adicionar('#')" class="botao2">#</button>
+        <button onclick="adicionar('-')" class="botao2">-</button>
+        <button onclick="adicionar('%')" class="botao2">%</button>
         <br>
-        <button class="botao3">C</button>
-        <button class="botao4">=</button>
-
-     </fieldset>
-    
+        <button onclick="limpar()" class="botao3">C</button>
+        <button onclick="adicionar('=')" class="botao4">=</button>
+    </fieldset>
 </body>
 </html>
