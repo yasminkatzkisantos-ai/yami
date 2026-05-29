@@ -1,0 +1,19 @@
+body{
+    background-color: green;
+}
+.tela{
+    width:600px ;
+    height:300px ;
+    background-color: pink;
+    border:1px solid black ;
+    margin-top:50px ;
+    margin-left: 200px;
+}
+    .lado{
+        width: 40%;
+        height:90% ;
+        background-color: yellow;
+        margin-top: 5%;
+        margin-left: 5%;
+        display: inline-block;
+    }
