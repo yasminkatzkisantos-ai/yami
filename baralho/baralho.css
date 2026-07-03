@@ -1,17 +1,39 @@
-.linha11, .linha22, .linha33 {
-    display: flex;
-    gap: 10px;           /* espaço entre as cartas */
-    margin-bottom: 20px;
+body{
+    width: 1000px;
+    height: 600px;
+    background-color: aqua;
 }
-
-.linha1, .linha2, .linha3 {
-    width: 100px;
-    height: 140px;
-    background: white;
-    border: 2px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 12px;
+.linha1, .linha2, .linha3{
+    width: 100% ;
+    height: 33%;
+    background-color: pink ;
+    margin-top: 0.3%;
+    flex-direction: row;
+}
+.linha11, .linha12, .linha13, .linha14, .linha15, .linha21, .linha22, .linha23, .linha24,.linha25, .linha31, .linha32, .linha33, .linha34, .linha35{
+    width: 18%;
+    height: 100%;
+    background-color: chartreuse ;
+    margin-left: 1.5%;
+    float: left ;
+    display: inline ;
+    flex-direction: row;
+}
+.cima, .baixo, .foto{
+    display: inline;
+    float: left;
+}
+.cima, .baixo{
+    width: 10%;
+    height: 10%;
+}
+.foto{
+    width:80% ;
+    height: 80%;
+}
+.baixo{
+    margin-top: 90%;
+}
+.cima{
+    margin-top: -1%;
 }
