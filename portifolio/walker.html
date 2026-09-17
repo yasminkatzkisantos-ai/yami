@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Yasmin Katzki</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- Topo Estilo Prof. Walker -->
+  <header class="top-nav">
+    <div class="nav-container">
+      <div class="brand">Portfólio Acadêmico</div>
+      <nav class="menu">
+        <a href="#sobre" class="nav-link active" onclick="showSection('sobre', this)">Home</a>
+        <a href="#projetos" class="nav-link" onclick="showSection('projetos', this)">Projetos</a>
+        <a href="#atividades" class="nav-link" onclick="showSection('atividades', this)">Atividades</a>
+        <a href="#contato" class="nav-link" onclick="showSection('contato', this)">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Container Principal -->
+  <main class="main-container">
+
+    <!-- Seção Home / Sobre o Aluno -->
+    <section id="sobre" class="section-block active">
+      <div class="profile-box">
+        <div class="profile-avatar">
+          <!-- Ícone/Avatar padrão -->
+          <div class="avatar-circle">YK</div>
+        </div>
+        <div class="profile-details">
+          <h2>Yasmin Katzki</h2>
+          <p class="subtitle">Estudante de TI | 2º Ano do Ensino Médio</p>
+          <hr class="divider">
+          <p class="bio">
+            Olá! Meu nome é <strong>Yasmin Katzki</strong>, tenho 16 anos e sou estudante do 2º ano do Ensino Médio com foco em Tecnologia da Informação.
+            Desenvolvo projetos práticos para aprimorar minhas habilidades em desenvolvimento web e algoritmos. Não possuo experiência profissional formal ainda, mas sigo me dedicando para futuras oportunidades na área de TI.
+          </p>
+          <div class="info-grid">
+            <div><strong>E-mail:</strong> <a href="mailto:yasmin.katzki1@gmail.com">yasmin.katzki1@gmail.com</a></div>
+            <div><strong>Telefone:</strong> <a href="https://wa.me/5541998130342" target="_blank">(41) 99813-0342</a></div>
+            <div><strong>Idade:</strong> 16 anos</div>
+            <div><strong>Série:</strong> 2º Ano A</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Trabalhos e Projetos -->
+    <section id="projetos" class="section-block">
+      <h2 class="section-title">Projetos Desenvolvidos</h2>
+      <p class="section-subtitle">Aplicações e sites desenvolvidos nas disciplinas de Tecnologia e Programação.</p>
+
+      <table class="walker-table">
+        <thead>
+          <tr>
+            <th>Projeto</th>
+            <th>Descrição</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Calculadora Web</strong></td>
+            <td>Aplicação desenvolvida para cálculos matemáticos básicos com interface responsiva em HTML/CSS/JS.</td>
+            <td><a href="https://yasminkatzkisantos-ai.github.io/yami/calcular/calular.html" target="_blank" class="table-btn">Visualizar</a></td>
+          </tr>
+          <tr>
+            <td><strong>Página para Barbearia</strong></td>
+            <td>Website institucional estilizado para apresentação de cortes e agendamentos de uma barbearia.</td>
+            <td><a href="https://yasminkatzkisantos-ai.github.io/yami/barbearia/barbearia.html" target="_blank" class="table-btn">Visualizar</a></td>
+          </tr>
+          <tr>
+            <td><strong>Cadastro com Firebase</strong></td>
+            <td>Sistema Web de formulário integrado ao banco de dados em tempo real da nuvem do Firebase.</td>
+            <td><a href="https://yasminkatzkisantos-ai.github.io/yami/firebase/firebase.html" target="_blank" class="table-btn">Visualizar</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Seção Atividades Escolares -->
+    <section id="atividades" class="section-block">
+      <h2 class="section-title">Atividades Escolares</h2>
+      <p class="section-subtitle">Registros e avaliações do ano letivo.</p>
+
+      <div class="card-box">
+        <h3>Acompanhamento de Atividades</h3>
+        <p>Atividades teóricas, relatórios, listas de exercícios e pesquisas interdisciplinares realizadas no 2º ano do Ensino Médio.</p>
+        <ul class="activity-list">
+          <li>✔ Exercícios de Algoritmos e Lógica de Programação</li>
+          <li>✔ Práticas com Manipulação de DOM e JavaScript</li>
+          <li>✔ Trabalhos em Grupo e Projetos Interdisciplinares</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="section-block">
+      <h2 class="section-title">Contato</h2>
+      <div class="card-box text-center">
+        <p>Para dúvidas, contatos acadêmicos ou oportunidades:</p>
+        <p><strong>E-mail:</strong> <a href="mailto:yasmin.katzki1@gmail.com">yasmin.katzki1@gmail.com</a></p>
+        <p><strong>WhatsApp / Telefone:</strong> <a href="https://wa.me/5541998130342" target="_blank">(41) 99813-0342</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé Institucional -->
+  <footer class="footer">
+    <p>Portfólio Escolar — Yasmin Katzki &copy; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
