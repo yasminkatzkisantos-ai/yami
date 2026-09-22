@@ -3,110 +3,271 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio | Yasmin Katzki</title>
+  <title>Yasmin Katzki | Desenvolvedora em Formação & Estudante de TI</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <header class="top-nav">
+  <header class="navbar">
     <div class="nav-container">
-      <div class="brand">Portfólio Acadêmico</div>
-      <nav class="menu">
-        <a href="#sobre" class="nav-link active" onclick="showSection('sobre', this)">Home</a>
-        <a href="#projetos" class="nav-link" onclick="showSection('projetos', this)">Projetos</a>
-        <a href="#atividades" class="nav-link" onclick="showSection('atividades', this)">Atividades</a>
-        <a href="#contato" class="nav-link" onclick="showSection('contato', this)">Contato</a>
+      <a href="#hero" class="logo">&lt;YasminKatzki /&gt;</a>
+      <nav class="nav-links">
+        <a href="#sobre" class="nav-item active" onclick="setActiveNav(this)">Sobre Mim</a>
+        <a href="#habilidades" class="nav-item" onclick="setActiveNav(this)">Habilidades</a>
+        <a href="#projetos" class="nav-item" onclick="setActiveNav(this)">Projetos</a>
+        <a href="#atividades" class="nav-item" onclick="setActiveNav(this)">Atividades</a>
+        <a href="#contato" class="nav-item" onclick="setActiveNav(this)">Contato</a>
       </nav>
     </div>
   </header>
 
-  <main class="main-container">
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <div class="badge"><i class="fa-solid fa-graduation-cap"></i> Estudante de Tecnologia em Desenvolvimento de Sistemas</div>
+      <h1>Olá, eu sou a <span class="highlight">Yasmin Katzki</span></h1>
+      <p class="hero-subtitle">Apaixonada por tecnologia, desenvolvimento web e criação de soluções digitais interativas.</p>
+      
+      <div class="hero-buttons">
+        <a href="#projetos" class="btn btn-primary"><i class="fa-solid fa-code"></i> Ver Meus Projetos</a>
+        <a href="#contato" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Entrar em Contato</a>
+      </div>
 
-    <section id="sobre" class="section-block active">
-      <div class="profile-box">
-        <div class="profile-avatar">
-          <div class="avatar-circle">YK</div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-number">16</span>
+          <span class="stat-label">Anos de Idade</span>
         </div>
-        <div class="profile-details">
-          <h2>Yasmin Katzki</h2>
-          <p class="subtitle">Estudante de TI | 2º Ano do Ensino Médio</p>
-          <hr class="divider">
-          <p class="bio">
-            Olá! Meu nome é <strong>Yasmin Katzki</strong>, tenho 16 anos e sou estudante do 2º ano do Ensino Médio com foco em Tecnologia da Informação.
-            Desenvolvo projetos práticos para aprimorar minhas habilidades em desenvolvimento web e algoritmos. Não possuo experiência profissional formal ainda, mas sigo me dedicando para futuras oportunidades na área de TI.
+        <div class="stat-card">
+          <span class="stat-number">2º Ano</span>
+          <span class="stat-label">Ensino Médio / TI</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">3+</span>
+          <span class="stat-label">Projetos Criados</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="main-content">
+
+    <section id="sobre" class="section">
+      <div class="section-header">
+        <h2><i class="fa-solid fa-user"></i> Sobre Mim</h2>
+        <p class="section-desc">Conheça minha trajetória acadêmica, origens na TI e objetivos futuros.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-avatar-card">
+          <div class="avatar-container">
+            <img src="foto-yasmin.jpg" alt="Foto de Yasmin Katzki" class="avatar-img">
+          </div>
+          <h3>Yasmin Katzki</h3>
+          <p class="tag-title">Desenvolvedora Web Jr. em Formação</p>
+          
+          <div class="quick-contacts">
+            <p><i class="fa-solid fa-school"></i> Colégio Cívico Militar Elias Abrahão</p>
+            <p><i class="fa-solid fa-location-dot"></i> Curitiba e Região, Brasil</p>
+            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:yasmin.katzki1@gmail.com">yasmin.katzki1@gmail.com</a></p>
+            <p><i class="fa-solid fa-phone"></i> <a href="https://wa.me/5541998130342" target="_blank">(41) 99813-0342</a></p>
+          </div>
+        </div>
+
+        <div class="about-text-card">
+          <h3>Como Descobri o Mundo da Tecnologia</h3>
+          <p>
+            Tenho 16 anos e atualmente estou cursando o <strong>2º ano do Ensino Médio</strong>. Conheci o universo da programação e da tecnologia em <strong>2025</strong>, quando o <strong>Colégio Cívico Militar Elias Abrahão</strong> ofereceu o curso técnico de <em>Tecnologia em Desenvolvimento de Sistemas</em>.
           </p>
-          <div class="info-grid">
-            <div><strong>E-mail:</strong> <a href="mailto:yasmin.katzki1@gmail.com">yasmin.katzki1@gmail.com</a></div>
-            <div><strong>Telefone:</strong> <a href="https://wa.me/5541998130342" target="_blank">(41) 99813-0342</a></div>
-            <div><strong>Idade:</strong> 16 anos</div>
-            <div><strong>Série:</strong> 2º Ano A</div>
+          <p>
+            Foi através dessa oportunidade que tive meu primeiro contato com a lógica de programação, banco de dados e criação de páginas web. O que começou como uma nova disciplina escolar rapidamente se tornou uma verdadeira paixão e escolha de carreira.
+          </p>
+          <p>
+            Embora ainda não tenha ingressado no mercado de trabalho, dedico-me diariamente ao estudo de novas ferramentas, realização de projetos práticos e desenvolvimento de aplicações web reais. Tenho um perfil focado, facilidade para aprender linguagens de programação e muita vontade de crescer na área de TI.
+          </p>
+          <p>
+            Meu objetivo é consolidar meus conhecimentos em desenvolvimento <em>Front-End</em> e integração de sistemas, preparando-me para futuras oportunidades de estágio, jovem aprendiz ou primeiro emprego em tecnologia.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <h4>Origem Acadêmica</h4>
+                <p>Curso de Tecnologia em Desenvolvimento de Sistemas no Colégio Cívico Militar Elias Abrahão (Desde 2025).</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-rocket"></i>
+              <div>
+                <h4>Objetivo Profissional</h4>
+                <p>Evoluir continuamente em Front-End e conquistar a primeira oportunidade no mercado de trabalho.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <section id="habilidades" class="section">
+      <div class="section-header">
+        <h2><i class="fa-solid fa-layer-group"></i> Habilidades Tecnológicas</h2>
+        <p class="section-desc">Ferramentas, linguagens e tecnologias que aprendi no curso e em projetos.</p>
+      </div>
 
-    <section id="projetos" class="section-block">
-      <h2 class="section-title">Projetos Desenvolvidos</h2>
-      <p class="section-subtitle">Aplicações e sites desenvolvidos nas disciplinas de Tecnologia e Programação.</p>
-
-      <table class="walker-table">
-        <thead>
-          <tr>
-            <th>Projeto</th>
-            <th>Descrição</th>
-            <th>Ação</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Calculadora Web</strong></td>
-            <td>Aplicação desenvolvida para cálculos matemáticos básicos com interface responsiva em HTML/CSS/JS.</td>
-            <td><a href="https://yasminkatzkisantos-ai.github.io/yami/calcular/calular.html" target="_blank" class="table-btn">Visualizar</a></td>
-          </tr>
-          <tr>
-            <td><strong>Página para Barbearia</strong></td>
-            <td>Website institucional estilizado para apresentação de cortes e agendamentos de uma barbearia.</td>
-            <td><a href="https://yasminkatzkisantos-ai.github.io/yami/barbearia/barbearia.html" target="_blank" class="table-btn">Visualizar</a></td>
-          </tr>
-          <tr>
-            <td><strong>Cadastro com Firebase</strong></td>
-            <td>Sistema Web de formulário integrado ao banco de dados em tempo real da nuvem do Firebase.</td>
-            <td><a href="https://yasminkatzkisantos-ai.github.io/yami/firebase/firebase.html" target="_blank" class="table-btn">Visualizar</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section id="atividades" class="section-block">
-      <h2 class="section-title">Atividades Escolares</h2>
-      <p class="section-subtitle">Registros e avaliações do ano letivo.</p>
-
-      <div class="card-box">
-        <h3>Acompanhamento de Atividades</h3>
-        <p>Atividades teóricas, relatórios, listas de exercícios e pesquisas interdisciplinares realizadas no 2º ano do Ensino Médio.</p>
-        <ul class="activity-list">
-          <li>✔ Exercícios de Algoritmos e Lógica de Programação</li>
-          <li>✔ Práticas com Manipulação de DOM e JavaScript</li>
-          <li>✔ Trabalhos em Grupo e Projetos Interdisciplinares</li>
-        </ul>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fa-brands fa-html5 skill-icon html-color"></i>
+          <h4>HTML5</h4>
+          <p>Estruturação semântica e acessível de páginas web.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-css3-alt skill-icon css-color"></i>
+          <h4>CSS3 & Flexbox</h4>
+          <p>Estilização moderna, layouts responsivos e animações CSS.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-js skill-icon js-color"></i>
+          <h4>JavaScript (ES6+)</h4>
+          <p>Lógica de programação, dinamismo e manipulação do DOM.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-fire skill-icon firebase-color"></i>
+          <h4>Firebase</h4>
+          <p>Integração de banco de dados NoSQL e autenticação em tempo real.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-git-alt skill-icon git-color"></i>
+          <h4>Git & GitHub</h4>
+          <p>Controle de versão de código e hospedagem com GitHub Pages.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-solid fa-mobile-screen-button skill-icon responsive-color"></i>
+          <h4>Design Responsivo</h4>
+          <p>Criação de sites que se adaptam a celulares e computadores.</p>
+        </div>
       </div>
     </section>
 
-    <section id="contato" class="section-block">
-      <h2 class="section-title">Contato</h2>
-      <div class="card-box text-center">
-        <p>Para dúvidas, contatos acadêmicos ou oportunidades:</p>
-        <p><strong>E-mail:</strong> <a href="mailto:yasmin.katzki1@gmail.com">yasmin.katzki1@gmail.com</a></p>
-        <p><strong>WhatsApp / Telefone:</strong> <a href="https://wa.me/5541998130342" target="_blank">(41) 99813-0342</a></p>
+    <section id="projetos" class="section">
+      <div class="section-header">
+        <h2><i class="fa-solid fa-laptop-code"></i> Meus Projetos</h2>
+        <p class="section-desc">Aplicações práticas e sites desenvolvidos durante o curso técnico.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-header calc-bg">
+            <i class="fa-solid fa-calculator project-icon"></i>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">JavaScript / CSS</span>
+            <h3>Calculadora Interativa</h3>
+            <p>Aplicação web para realização de cálculos matemáticos com layout moderno, botões interativos e suporte a operações encadeadas.</p>
+            <a href="https://yasminkatzkisantos-ai.github.io/yami/calcular/calular.html" target="_blank" class="btn-project">
+              Testar Calculadora <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header barber-bg">
+            <i class="fa-solid fa-scissors project-icon"></i>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">HTML5 / Design Web</span>
+            <h3>Website para Barbearia</h3>
+            <p>Página de serviços elegante e profissional para uma barbearia, com apresentação do espaço, catálogo de cortes e estilo moderno.</p>
+            <a href="https://yasminkatzkisantos-ai.github.io/yami/barbearia/barbearia.html" target="_blank" class="btn-project">
+              Ver Site da Barbearia <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header firebase-bg">
+            <i class="fa-solid fa-database project-icon"></i>
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Firebase / Backend</span>
+            <h3>Sistema de Cadastro Firebase</h3>
+            <p>Sistema interativo com formulários completos de cadastro e leitura de dados sincronizados diretamente com o banco de dados Firebase.</p>
+            <a href="https://yasminkatzkisantos-ai.github.io/yami/firebase/firebase.html" target="_blank" class="btn-project">
+              Acessar Sistema <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+    <section id="atividades" class="section">
+      <div class="section-header">
+        <h2><i class="fa-solid fa-book-bookmark"></i> Atividades no Colégio Elias Abrahão</h2>
+        <p class="section-desc">Vivência prática e desenvolvimento no curso de Tecnologia em Desenvolvimento de Sistemas.</p>
+      </div>
+
+      <div class="activities-card">
+        <div class="activity-info">
+          <h3>Formação Técnica e Prática no Cívico Militar</h3>
+          <p>
+            O curso de TI do Colégio Cívico Militar Elias Abrahão proporciona aprendizado prático voltado ao desenvolvimento de software, raciocínio lógico e trabalho em equipe para solução de desafios tecnológicos.
+          </p>
+        </div>
+        <div class="activities-list">
+          <div class="act-item">
+            <i class="fa-solid fa-check-double act-icon"></i>
+            <div>
+              <strong>Lógica de Programação & Algoritmos:</strong>
+              <span>Estruturação de raciocínio computacional com JavaScript e controle de fluxo.</span>
+            </div>
+          </div>
+          <div class="act-item">
+            <i class="fa-solid fa-check-double act-icon"></i>
+            <div>
+              <strong>Desenvolvimento Web Front-End:</strong>
+              <span>Criação de páginas completas com HTML5, CSS3, Flexbox e responsividade.</span>
+            </div>
+          </div>
+          <div class="act-item">
+            <i class="fa-solid fa-check-double act-icon"></i>
+            <div>
+              <strong>Banco de Dados e Nuvem:</strong>
+              <span>Conexão de aplicações web com serviços como Firebase e repositórios no GitHub.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contato" class="section">
+      <div class="section-header">
+        <h2><i class="fa-solid fa-comments"></i> Contato</h2>
+        <p class="section-desc">Sinta-se à vontade para entrar em contato para projetos, dúvidas ou oportunidades.</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Yasmin Katzki</h3>
+        <p>Estudante de TI | Colégio Cívico Militar Elias Abrahão</p>
+        
+        <div class="contact-links-grid">
+          <a href="mailto:yasmin.katzki1@gmail.com" class="contact-link-box">
+            <i class="fa-solid fa-envelope"></i>
+            <span>yasmin.katzki1@gmail.com</span>
+          </a>
+          <a href="https://wa.me/5541998130342" target="_blank" class="contact-link-box">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>(41) 99813-0342</span>
+          </a>
+        </div>
       </div>
     </section>
 
   </main>
-
   <footer class="footer">
-    <p>Portfólio Escolar — Yasmin Katzki &copy; 2026</p>
+    <div class="footer-content">
+      <p>&copy; Yasmin Katzki — Portfólio Pessoal & Acadêmico.</p>
+      <p class="footer-sub">Desenvolvimento de Sistemas | Colégio Cívico Militar Elias Abrahão</p>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
